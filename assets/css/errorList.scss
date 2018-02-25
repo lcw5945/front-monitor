@@ -1,0 +1,103 @@
+.errorList-box{
+    .error-list{
+        li,.error-item{
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            padding: 0 20px;
+            border-bottom: 1px solid #edeef1;
+            cursor: pointer;
+
+            &:hover{
+                background: #f8f9fc;
+            }
+
+            div{
+                float: left;
+                width: 120px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                font-size: 16px;
+                flex-grow:1;
+            }
+            .first{
+                min-width: 400px;
+                text-align: left;
+                flex-grow:0;
+            }
+            .status i{
+                font-size: 40px;
+                display: block;
+                margin-top: 15px;
+            }
+
+            .errorName{
+                flex-direction:column;
+                line-height: 1;
+                font-size: 14px;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
+                -ms-word-wrap: normal !important;
+                word-wrap: normal !important;
+                white-space: nowrap !important;
+
+                span{
+                    display: block;
+                    margin-top: 9px;
+                }
+                span:not(:first-child){
+                    font-size: 12px;
+                }
+                span:nth-child(2){
+                    opacity: 0.8;
+                }
+                span:nth-child(3){
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .error-item{
+
+        }
+
+        .title{
+            background: #ebebec;
+
+            div{
+                height: 40px;
+                line-height: 40px;
+
+                .ivu-icon{
+                    color: #c2c2c2;
+                }
+                .sortActive{
+                    color: rgb(25, 190, 107);
+                }
+            }
+            div:nth-child(4),div:nth-child(5),div:nth-child(6){
+                &:hover{
+                    background: #f8f8f8;
+                }
+            }
+
+
+            &:hover{
+                background:#ebebec;
+            }
+        }
+    }
+}
+
+.clearfix:after {
+    content: ' ';
+    height: 0;
+    display: block;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}

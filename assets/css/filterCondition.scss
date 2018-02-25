@@ -1,0 +1,54 @@
+.filterCondition-box{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: #35353d;
+    color: #4A4A4A;
+    position: fixed;
+    top: 88px;
+    left: 0;
+    z-index: 55;
+
+    .ivu-cascader{
+        width: 150px;
+        display: inline-block;
+    }
+
+    .ivu-input-wrapper{
+        color: rgba(255,255,255,0.8);
+
+        input{
+            border: none;
+            background: #26262e;
+            box-shadow: none;
+        }
+        .ivu-select-selected-value{
+            background: #26262e;
+        }
+    }
+
+    .ivu-select-dropdown,.ivu-cascader-menu{
+         background: #26262e;
+        border-radius: 4px;
+         .ivu-cascader-menu-item{
+             color: rgba(255,255,255,0.8);
+             border-bottom: 1px solid #35353d;
+
+             &:not(.ivu-cascader-menu-item-active):hover{
+                 background: #35353d;
+                 color: rgba(255,255,255,1);
+             }
+         }
+
+         .ivu-cascader-menu-item-active{
+             background: #4d4d56;
+         }
+     }
+    .ivu-icon-navicon-round{
+        font-size: 20px;
+        color: #6c6c75;
+        margin-right: 10px;
+        float: left;
+        margin-top: 6px;
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "hefan-debugs",
+  "version": "1.0.0",
+  "description": "debugs project",
+  "author": "李春伟 <lichunwei@hefantv.com>",
+  "private": true,
+  "scripts": {
+    "server": "backpack start",
+    "nuxtBuild": "nuxt build",
+    "dev": "backpack dev",
+    "build": "backpack build",
+    "pro": "backpack pro",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "config": {
+    "nuxt": {
+      "host": "127.0.0.1",
+      "port": "9012"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cross-env": "^5.0.1",
+    "express": "^4.15.3",
+    "express-session": "^1.15.6",
+    "hefan-debug-log-s": "^0.0.10",
+    "hefantv-backpack": "^0.1.6",
+    "ioredis": "^3.2.2",
+    "jquery": "^3.3.1",
+    "jsoneditor": "^5.13.1",
+    "moment": "^2.20.1",
+    "mongoose": "^5.0.3",
+    "nuxt": "^1.0.0-rc11",
+    "source-map-support": "^0.4.15",
+    "vue-echarts": "^3.0.1"
+  },
+  "devDependencies": {
+    "iview": "^2.7.3",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.7.2",
+    "nodemailer": "^4.4.1",
+    "opn": "^4.0.2",
+    "sass-loader": "^6.0.6",
+    "vue-infinite-scroll": "^2.0.2",
+    "ws": "^2.2.3"
+  }
+}

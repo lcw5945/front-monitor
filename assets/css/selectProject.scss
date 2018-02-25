@@ -1,0 +1,124 @@
+.select-box{
+    position: relative;
+    .selectVal{
+        font-size: 18px;
+        color: #dddde4;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 15px;
+        cursor: pointer;
+
+
+        img{
+            height: 24px;
+            display: block;
+            float: left;
+            margin-top: 8px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        &:hover{
+            color: #a9a9b7;
+        }
+    }
+
+    .dropDown{
+        width: 200px;
+        overflow: hidden;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        padding-bottom: 40px;
+        border-radius: 4px;
+        border: 1px solid #000;
+        ul{
+            overflow-x: hidden;
+            background: #26262e;
+
+            max-height: 300px;
+            li{
+                height: 40px;
+                line-height: 40px;
+                padding: 0 15px;
+                font-size: 16px;
+                color: #9b9b9f;
+                cursor: pointer;
+                border-bottom: 1px solid #303038;
+
+                img{
+                    height: 24px;
+                    display: block;
+                    float: left;
+                    margin-top: 8px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                }
+
+                &:hover{
+                    background: #34343c;
+                    color: #ebebec;
+                }
+
+                span{
+                    display: block;
+                    float: left;
+                    max-width: 140px;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                }
+
+                .editProject{
+                    width: 20px;
+                    float: right;
+                    text-align: center;
+                }
+            }
+        }
+
+        .create-btn{
+            width: 100%;
+            text-align: center;
+            height: 40px;
+            background: #4d4d56;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            cursor: pointer;
+
+            a{
+                color: #fff;
+                opacity: 0.8;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.vueImgBg{
+    background: #16a085;
+}
+
+.javascriptImgBg{
+    background: #fed075;
+}
+
+.nodejsImgBg{
+    background: #9BC255;
+}
+
+.reactImgBg{
+    background: #1acadb;
+}
+
+.koaImgBg{
+    background: #fff;
+}
+
+.expressImgBg{
+    background: #7586DB;
+}

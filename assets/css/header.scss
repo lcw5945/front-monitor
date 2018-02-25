@@ -1,0 +1,27 @@
+.header-box{
+    height: 50px;
+    background: #00a680;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+    z-index: 99;
+    display: flex;
+    justify-content:center;
+
+    span{
+        margin: 0 10px;
+
+        a{
+            font-size: 16px;
+            color: #fff;
+
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+}

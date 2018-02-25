@@ -1,0 +1,31 @@
+.selectPJ-box{
+    width: 100%;
+    position: fixed;
+    top: 49px;
+    left: 0;
+    background: #575768;
+    z-index: 99;
+    padding: 0 20px;
+    line-height: 40px;
+
+    > .select-box{
+        float: left;
+    }
+    > span{
+        float: left;
+        margin-right: 10px;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #ccc;
+    }
+    .errorList-btn{
+        cursor: pointer;
+        a{
+            cursor: pointer;
+            color: #fff;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
